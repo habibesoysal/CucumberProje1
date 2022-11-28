@@ -36,7 +36,9 @@ public class MedunnaPage {
     public WebElement newPasswordFourthColor;
     public WebElement newPasswordFifthColor;
     @FindBy(xpath = "//input[@name='firstPassword']") public WebElement newPasswordSec;
-    @FindBy(xpath = "//input[@name='username']") public WebElement username;
+    @FindBy(xpath = "//input[@id='username']") public WebElement username;
+
+    @FindBy(xpath = "//*[@type='password']") public WebElement password;
     @FindBy(xpath = "//*[text()='Sign in']") public WebElement signIn;
     @FindBy(xpath = "//*[text()='Administration']") public WebElement girisText;
     @FindBy(xpath = "//*[@id='rememberMe']") public WebElement rememberMe;
@@ -46,5 +48,29 @@ public class MedunnaPage {
     @FindBy(xpath = "//*[text()='Cancel']") public WebElement cancel;
     @FindBy(xpath = "//*[@id='app-view-container']") public WebElement anaSayfa;
     @FindBy(xpath = "Sign out") public WebElement signOut;
+    // son eklenenler 24. US için
+    @FindBy(xpath = "//*[text()='MY PAGES(PATIENT)']") public WebElement myPages;
+    @FindBy(xpath = "(//*[@class='bx bx-chevron-right'])[6]") public WebElement makeAnAppointment;
+    @FindBy(xpath = "//h2") public WebElement makeAnAppointmentHead;
+
+    @FindBy(xpath = "(//*[text()='My Appointments'])[1]") public WebElement myAppointments;
+    @FindBy(xpath = "(//*[@href='/patient-appointment'])[2]") public WebElement myAppointment;
+
+    @FindBy(xpath = "(//*[@href='/patient-appointment'])[2]") public WebElement firstName;
+    @FindBy(xpath = "//*[@name='phone']") public WebElement phone;
+    @FindBy(xpath = "//*[@id='register-submit']") public WebElement sendRequest;
+    @FindBy(xpath = "//*[@style='pointer-events: none;']") public WebElement onay;
+    @FindBy(xpath = "(//*[@class='svg-inline--fa fa-pencil-alt fa-w-16 '])[1]") public WebElement showTests;
+    @FindBy(xpath = "(//*[@class='btn btn-warning btn-sm'])[1]") public WebElement showinvoice;
+    @FindBy(xpath = "//*[@style='font-size: 45px;']") public WebElement invoice;
+    @FindBy(xpath = "//*[@style='font-size: 45px;']") public WebElement fatura;
+    @FindBy(xpath = "//tbody//tr[1]//td[7]") public WebElement viewTest;
+    @FindBy(xpath = "//*[@class='jh-card card']") public WebElement testResult;
+    @FindBy(xpath = "//*[text()='onuray']") public WebElement hastaPage;
+
+
+
+
+
 
 }
